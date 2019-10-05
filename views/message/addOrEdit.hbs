@@ -1,0 +1,36 @@
+<h3>{{viewTitle}}</h3>
+
+<form action="/message" method="POST" autocomplete="off">
+<imput type="hidden" name="_id" value="{{message._id}}">
+    <dir class="font-group" style="padding-left: 0px;">
+        <label>Name</label>
+        <input type="text" class="form-control" name="fullName" placeholder="Full Name" value="{{message.fullName}}">
+        <div class="text-danger">
+            {{message.fullNameError}}</div>
+    </dir>
+
+    <dir class="font-group" style="padding-left: 0px;">
+        <label>Email</label>
+        <input type="text" class="form-control" name="email" placeholder="Email" value="{{message.email}}">
+        <div class="text-danger">
+            {{message.emailError}}</div>
+    </dir>
+
+    {{!-- <div class="form-row"> --}}
+    <dir class="font-group" style="padding-left: 0px;">
+        <label>Address</label>
+        <input type="text" class="form-control" name="address" placeholder="Address" value="{{message.address}}">
+    </dir>
+
+    <dir class="font-group" style="padding-left: 0px;">
+        <label>Phone</label>
+        <input type="text" class="form-control" name="phone" placeholder="Phone" value="{{message.phone}}">
+    </dir>
+
+    
+    <div class="form-group" style="float: right;">
+        <a class="btn btn-light" href="/message/list" style=" border: solid 1px gray;"> Cancel</a>
+        <button type="submit" class="btn btn-info"> Save</button>
+    </div>
+    </div>
+</form>
