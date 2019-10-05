@@ -1,10 +1,10 @@
 {
   "name": "final",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,5 +14,15 @@
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "mongoose": "^5.7.3"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yuuki156657/node-final.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Yuuki156657/node-final/issues"
+  },
+  "homepage": "https://github.com/Yuuki156657/node-final#readme",
+  "description": ""
 }
