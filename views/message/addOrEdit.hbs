@@ -11,25 +11,12 @@
 
     <dir class="font-group" style="padding-left: 0px;">
         <label>Message</label>
-        {{!-- <input type="text" class="form-control" name="message" placeholder="Message" value="{{message.message}}"> --}}
         <textarea rows="5" cols="50" name="message" type="text" class="form-control" placeholder="Comment here" value="{{message.message}}"></textarea>
 
         <div class="text-danger">
             {{message.messageError}}</div>
     </dir>
 
-    {{!-- <div class="form-row"> --}}
-    {{!-- <dir class="font-group" style="padding-left: 0px;">
-        <label>Address</label>
-        <input type="text" class="form-control" name="address" placeholder="Address" value="{{message.address}}">
-    </dir>
-
-    <dir class="font-group" style="padding-left: 0px;">
-        <label>Phone</label>
-        <input type="text" class="form-control" name="phone" placeholder="Phone" value="{{message.phone}}">
-    </dir> --}}
-
-    
     <div class="form-group" style="">
         <button type="submit" class="btn btn-info"> Send</button>
         <a class="btn btn-light" href="/message/list" style=" border: solid 1px gray;"> Cancel</a>

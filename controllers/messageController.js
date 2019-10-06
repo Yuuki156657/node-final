@@ -36,17 +36,6 @@ function insertRecord(req, res) {
     });
 }
 
-function updateRecord(req, res) {
-    // Message.findOneAndUpdate({ _id: req.body._id }, req.body, { new: true }, (err, doc) => {
-    Message.findOneAndUpdate({ _id: req.body._id }, req.body, { new: true }, (err) => {
-    
-    if (!err) { res.redirect('message/list'); }
-        else {
-            console.log('Error during record update : ' + err);
-        }
-    });
-}
-
 router.get('/list', (req, res) => {
     Message.find((err, docs) => {
         if (!err){
