@@ -25,7 +25,7 @@
             <td>{{this.address}}</td>
             <td>{{this.phone}}</td>
             <td>
-                <a href="/message/{{this._id}}" style="color: orange"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                {{!-- <a href="/message/{{this._id}}" style="color: orange"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a> --}}
                 <a href="/message/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record ?');" style="margin-left: 20px; color: red;"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
             </td>
         </tr>
