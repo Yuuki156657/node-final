@@ -1,15 +1,15 @@
-<h3>{{viewTitle}}</h3>
+<h3 style="padding:0 20px 0 20px;">{{viewTitle}}</h3>
 
 <form action="/message" method="POST" autocomplete="off">
 <imput type="hidden" name="_id" value="{{message._id}}">
-    <dir class="font-group" style="padding-left: 0px;">
+    <dir class="font-group" style="padding:0 20px 0 20px;">
         <label>Name</label>
-        <input type="text" class="form-control" name="fullName" placeholder="Full Name" value="{{message.fullName}}">
+        <input type="text" class="form-control" name="name" placeholder="Name" value="{{message.name}}">
         <div class="text-danger">
-            {{message.fullNameError}}</div>
+            {{message.nameError}}</div>
     </dir>
 
-    <dir class="font-group" style="padding-left: 0px;">
+    <dir class="font-group" style="padding:0 20px 0 20px;">
         <label>Message</label>
         <textarea rows="5" cols="50" name="message" type="text" class="form-control" placeholder="Comment here" value="{{message.message}}"></textarea>
 
@@ -17,7 +17,7 @@
             {{message.messageError}}</div>
     </dir>
 
-    <div class="form-group" style="">
+    <div class="form-group" style="padding:0 20px 0 20px;">
         <button type="submit" class="btn btn-info"> Send</button>
         <a class="btn btn-light" href="/message/list" style=" border: solid 1px gray;"> Cancel</a>
     </div>

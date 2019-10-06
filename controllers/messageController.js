@@ -25,7 +25,7 @@ mongoose.set('useFindAndModify', false);
 
 function insertRecord(req, res) {
     var message = new Message();
-    message.fullName = req.body.fullName;
+    message.name = req.body.name;
     message.message = req.body.message;
     message.save((err, doc) => {
         if (!err)
