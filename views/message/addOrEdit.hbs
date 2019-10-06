@@ -11,9 +11,10 @@
 
     <dir class="font-group" style="padding-left: 0px;">
         <label>Message</label>
-        <input type="text" class="form-control" name="message" placeholder="Message" value="{{message.message}}">
+        {{!-- <input type="text" class="form-control" name="message" placeholder="Message" value="{{message.message}}"> --}}
+        <textarea rows="5" cols="50" name="message" type="text" class="form-control" placeholder="Comment here" value="{{message.message}}"></textarea>
+
         <div class="text-danger">
-        {{!-- <textarea rows="5" cols="50" name="Message">Comment here</textarea> --}}
             {{message.messageError}}</div>
     </dir>
 

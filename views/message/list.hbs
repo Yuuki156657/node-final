@@ -1,4 +1,4 @@
-<h3 style="background-color: rgb(130, 219, 248); color: black; padding: 10px 0 10px 25px;">Message  
+<h3 style="background-color: rgb(130, 219, 248); color: black; padding: 10px 0 10px 25px; text-align: center;">Message Board  
     {{!-- <a class="btn btn-success" href="/message" style="float: right; margin-left: 10px; margin-right: 25px;">
     <i class="fa fa-plus-circle"></i> New</a> --}}
     {{!-- <a class="btn btn-danger" href="/message" style="float: right;">
@@ -16,7 +16,7 @@
         {{#each list}}
         <tr>
             <td>{{this.fullName}}</td>
-            <td>{{this.message}}</td>
+            <td style="word-wrap: normal;">{{this.message}}</td>
             <td>
                 {{!-- <a href="/message/{{this._id}}" style="color: orange"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a> --}}
                 <a href="/message/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record ?');" style="margin-left: 20px; color: red;"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
