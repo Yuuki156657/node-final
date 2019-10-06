@@ -6,7 +6,7 @@
         <tr>
             <th>Name</th>
             <th>Message</th>
-            <th></th>
+            <th style="margin: 5px;"></th>
         </tr>
     </thead>
     <tbody>
@@ -14,7 +14,7 @@
         <tr>
             <td>{{this.name}}</td>
             <td style="width: 350px; word-wrap: keep-all;">{{this.message}}</td>
-            <td style="float: right;">
+            <td style="left: 20px;">
                 <a href="/message/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this message ?');" style="margin-left: 20px; color: orange;"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
             </td>
         </tr>
