@@ -26,9 +26,7 @@ mongoose.set('useFindAndModify', false);
 function insertRecord(req, res) {
     var message = new Message();
     message.fullName = req.body.fullName;
-    message.email = req.body.email;
-    message.address = req.body.address;
-    message.phone = req.body.phone;
+    message.message = req.body.message;
     message.save((err, doc) => {
         if (!err)
             res.redirect('message/list');
